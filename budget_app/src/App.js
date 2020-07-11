@@ -9,6 +9,9 @@ function App() {
 
     <GlobalProvider>
       <Header/>
+      <div className="container">
+        <TransactionList/>
+      </div>
     </GlobalProvider>
   );
 }

@@ -1,20 +1,19 @@
-import React, { useContext, Fragment } from 'react';
+import React, { useContext } from 'react';
+import Transaction from './Transaction';
 import { GlobalContext } from '../context/GlobalState';
 
-function TransactionList() {
-    
+const TransactionList = () => {
 	const { transactions } = useContext(GlobalContext);
-
 	return (
-		<Fragment>
+		<>
 			<h3>History</h3>
-			<ul className='List'>
-
-
-
-            </ul>
-		</Fragment>
+			<ul className='list'>
+				{transactions.map((transaction) => (
+					<Transaction key={transaction.id} transaction={transaction} />
+				))}
+			</ul>
+		</>
 	);
-}
+};
 
 export default TransactionList;
