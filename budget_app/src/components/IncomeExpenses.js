@@ -6,9 +6,9 @@ const IncomeExpenses = () => {
 
     const amount = transactions.map((transaction) => transaction.amount);
     
-    
 
-	return <div></div>;
+
+	return <div>Income Expense</div>;
 };
 
 export default IncomeExpenses;
