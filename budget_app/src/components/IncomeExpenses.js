@@ -4,9 +4,7 @@ import { GlobalContext } from '../context/GlobalState';
 const IncomeExpenses = () => {
 	const { transactions } = useContext(GlobalContext);
 
-    const amount = transactions.map((transaction) => transaction.amount);
-    
-
+	const amount = transactions.map((transaction) => transaction.amount);
 
 	return <div>Income Expense</div>;
 };
