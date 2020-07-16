@@ -11,7 +11,12 @@ const IncomeExpenses = () => {
 		.reduce((acc, item) => (acc += item), 0)
 		.toFixed(2);
 
-	return <div>Income Expense</div>;
+	const expense = (
+		amounts.filter((item) => item < 0).reduce((acc, item) => (acc += item), 0) *
+		-1
+	).toFixed(2);
+
+	return <div className="inc-exp-contaniner"></div>;
 };
 
 export default IncomeExpenses;
