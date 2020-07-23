@@ -7,7 +7,7 @@ const AddTransaction = () => {
 
 	const { addTransaction } = useContext(GlobalContext);
 
-	return <div>Add Transaction Component</div>;
+	return <div>Add Transaction Components</div>;
 };
 
 export default AddTransaction;
