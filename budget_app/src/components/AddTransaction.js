@@ -23,7 +23,7 @@ const AddTransaction = () => {
 			<h3>Add new transaction</h3>
 			<form onSubmit={onSubmit}>
 				<div className='form-control'>
-					<label htmlFor='text'></label>
+					<label htmlFor='text'>Text</label>
 				</div>
 			</form>
 		</>
