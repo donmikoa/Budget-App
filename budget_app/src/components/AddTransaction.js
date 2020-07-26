@@ -31,6 +31,7 @@ const AddTransaction = () => {
 						placeholder='Enter text...'
 					/>
 				</div>
+				<div className='form-control'></div>
 			</form>
 		</>
 	);
