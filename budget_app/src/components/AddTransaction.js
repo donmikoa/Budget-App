@@ -42,6 +42,7 @@ const AddTransaction = () => {
 						placeholder='EnterAmount...'
 					/>
 				</div>
+				<button></button>
 			</form>
 		</>
 	);
