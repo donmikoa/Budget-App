@@ -1,3 +1,6 @@
+const Transaction = require('../models/transaction')
+
+
 // @decs Get all transactions
 // @route GET /api/v1/transactions
 // @access Public
