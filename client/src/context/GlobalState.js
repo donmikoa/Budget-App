@@ -47,7 +47,18 @@ export const GlobalProvider = ({ children }) => {
 		}
 	}
 
-	function addTransaction(transaction) {
+	async function addTransaction(transaction) {
+		const config = {
+			headers:{
+				'Content-Type' : 'application/json'
+			}
+		}
+
+		try {
+			
+		} catch (err) {
+			
+		}
 		dispatch({
 			type: 'ADD_TRANSACTION',
 			payload: transaction,
