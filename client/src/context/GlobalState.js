@@ -55,7 +55,7 @@ export const GlobalProvider = ({ children }) => {
 		};
 
 		try {
-			const res = await axios.post('/api/v1/transaction', transaction, config);
+			const res = await axios.post('/api/v1/transactions', transaction, config);
 			dispatch({
 				type: 'ADD_TRANSACTION',
 				payload: res.data.data,
